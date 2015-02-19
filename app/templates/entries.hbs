@@ -1,0 +1,7 @@
+{{#each entry in model}}
+<li>{{#link-to "entries.show" entry}}{{entry.title}}{{/link-to}}</li>
+{{/each}}
+
+{{#link-to "entries.new"}}New Entry{{/link-to}}
+
+{{outlet}}
